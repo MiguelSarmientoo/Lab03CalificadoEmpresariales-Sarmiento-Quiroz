@@ -1,7 +1,33 @@
-Proceso de Agencia de Viajes
-Cada año, la agencia de viajes XY tiene que procesar un lote de quejas (cerca de 1000). 
-Hay un departamento especial para el proceso de las quejas (Departamento C), además, hay un departamento interno llamado logística (Departamento L) el cual se encarga de registrar las quejas que llegan y procesar las quejas procesadas. El siguiente proceso es usado para manejar las quejas y reclamos: 
-Primero, un empleado del departamento de Logística registra cada queja o reclamo que se presente.  
-Después del registro, un empleado del departamento de quejas envía un formulario al cliente con preguntas acerca de la naturaleza del reclamo. Hay dos posibilidades: que el cliente devuelva el formulario dentro de las dos semanas siguientes o que no lo haga. Si el formulario es devuelto, este es procesado automáticamente, resultando en un reporte que puede ser usado por el  proceso actual de quejas y reclamos. Si el formulario no es devuelto a tiempo, un time-out ocurre, resultando en un reporte vacío. Tenga en cuenta que no recibir el formulario no implica la terminación del proceso ni que la queja sea descartada. Después del registro, es decir, en paralelo con el envío y recepción del formulario, comienza la preparación del proceso.  
-Primero, la queja o reclamo es evaluada por el director de quejas y reclamos del departamento C. La evaluación indicará si es requerido un procesamiento adicional. Si no se requiere procesamiento adicional y ya se procesó el formulario, la queja o reclamo es archivada. Si un procesamiento adicional es requerido, un empleado del departamento de quejas y reclamos ejecuta la tarea “Procesar la Queja” (en esta actividad se proponen acciones necesarias para dar solución a la queja). Para Procesar la queja, el reporte resultante del formulario es utilizado.  
-Tenga en cuenta que el reporte puede estar vacío. El resultado de la tarea “Procesar la Queja”  es analizado por el director de quejas y reclamos. Si el resultado no es OK, la tarea “Procesar la Queja” es ejecutada nuevamente. Esto es repetido tantas veces hasta que el resultado es aceptado. Si el resultado es aceptado, un empleado del departamento C ejecuta las acciones propuestas. Después de esto, la queja o reclamo es archivada por un empleado del departamento C.  
+## Proceso de Manejo de Quejas y Reclamos de la Agencia de Viajes XY
+
+La agencia de viajes XY procesa anualmente un lote de aproximadamente 1000 quejas y reclamos. Para gestionar estas quejas, la agencia cuenta con dos departamentos clave: el Departamento de Logística (Departamento L) y el Departamento de Quejas y Reclamos (Departamento C). El proceso utilizado para manejar las quejas y reclamos es el siguiente:
+
+1. **Registro de la Queja o Reclamo:**
+    - Un empleado del Departamento L registra cada queja o reclamo que se presenta.
+
+2. **Envío del Formulario al Cliente:**
+    - Después del registro, un empleado del Departamento C envía un formulario al cliente con preguntas sobre la naturaleza del reclamo.
+    - Existen dos posibilidades:
+        - El cliente devuelve el formulario dentro de las dos semanas siguientes.
+        - El cliente no devuelve el formulario dentro de las dos semanas (ocurre un time-out).
+    - Si el formulario es devuelto, este se procesa automáticamente, generando un reporte que se utilizará en el proceso de quejas y reclamos.
+    - Si el formulario no es devuelto a tiempo, se genera un reporte vacío. Sin embargo, no recibir el formulario no implica la terminación del proceso ni que la queja sea descartada.
+
+3. **Preparación del Proceso (En Paralelo con el Envío y Recepción del Formulario):**
+    - La queja o reclamo es evaluada por el director del Departamento C.
+    - La evaluación determina si se requiere un procesamiento adicional.
+
+4. **Procesamiento Adicional:**
+    - Si no se requiere procesamiento adicional y el formulario ya ha sido procesado, la queja o reclamo es archivada.
+    - Si se requiere procesamiento adicional, un empleado del Departamento C ejecuta la tarea "Procesar la Queja".
+        - Durante esta tarea, se utilizan las acciones necesarias para dar solución a la queja, basándose en el reporte del formulario, que puede estar vacío.
+
+5. **Análisis del Resultado:**
+    - El resultado de la tarea "Procesar la Queja" es analizado por el director del Departamento C.
+    - Si el resultado no es aceptado, la tarea "Procesar la Queja" se repite hasta que el resultado sea aceptado.
+
+6. **Ejecución de Acciones Propuestas:**
+    - Una vez aceptado el resultado, un empleado del Departamento C ejecuta las acciones propuestas.
+    - Finalmente, la queja o reclamo es archivada por un empleado del Departamento C.
+
+Este proceso asegura que todas las quejas y reclamos sean gestionados de manera eficiente y sistemática, garantizando la satisfacción del cliente y el cumplimiento de los procedimientos internos de la agencia.
